@@ -36,6 +36,12 @@
         .line-border {
             border-top: 1px solid #ddd;
         }
+        .photo-span3 {                     /* 160px */
+            padding: 10px;                 /* 20px */
+            border: 2px solid #f5f5f5;        /* 4px */
+            width: 136px;
+            background: #fafafa;
+        }
     </style>
 </head>
 <body>
@@ -66,14 +72,22 @@
         </section>
         
         <section id="resume-short-bio">
-            <h1>Bio <small>Short Bio</small></h1>
-            <p>
-                Born in 1972, Istanbul/Turkey. Started computer programming in 1984. First
-                commercial product was released in 1991 as Tv Game on national tv network.
-                Married, non-smoker and newbie father of a little angel. Currently, head of
-                WebApp Development Department at <a href="http://www.bilgi.edu.tr">Istanbul Bilgi University</a>
-                since 2001.
-            </p>
+            <div class="row">
+                <div class="span13">
+                    <h1>Bio <small>Short Bio</small></h1>
+                    <p>
+                        Born in 1972, Istanbul/Turkey. Started computer programming in 1984. First
+                        commercial product was released in 1991 as Tv Game on national tv network.
+                        Married, non-smoker and newbie father of a little angel. Currently, head of
+                        WebApp Development Department at <a href="http://www.bilgi.edu.tr">Istanbul Bilgi University</a>
+                        since 2001.
+                    </p>
+                </div>
+                <div class="span3">
+                    <img class="photo-span3" src="photo.jpg" alt="Uğur Özyılmazel"/>
+                </div>
+            </div>
+            
         </section>
         
         
