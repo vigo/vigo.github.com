@@ -19,15 +19,45 @@
     <script>
         $(document).ready(function() {
             $(".external-open a").attr('target', "_blank");
+            
+            var pics = [
+                'amiga-bulk.jpg',
+                'amiga-kick13.jpg',
+                'amiga-roms.jpg',
+                'amiga-wb.jpg',
+                'bidik.jpg'
+            ], irq;
+            
+            function irq_loader(){
+                var r = Math.ceil(Math.random()*pics.length-1),
+                    f = "images/splash/" + pics[r];
+                
+                $("#site-random-photos p").animate({
+                    opacity: 0
+                }, 1000, function(){
+                    $(this).css({
+                        "background": "url(" + f + ")"
+                    }).animate({
+                        opacity: 1
+                    }, 1000);
+                })
+                irq = window.setTimeout(irq_loader, 10*1000);
+            }
+            
+            irq_loader();
+            
         });
         
     </script>
     <style type="text/css" media="screen">
         section {
+            padding-top: 20px;
+        }
+        .pt60 {
             padding-top: 60px;
         }
         .footer {
-/*            background: #eee;*/
+            background: #eee;
 /*            padding: 30px 0;*/
 /*            border: none;*/
 /*            text-align: center;*/
@@ -39,15 +69,33 @@
         .twitter-name {
             font-size: 20px;
         }
+        
+        #site-random-photos p {
+            width: 940px;
+            height: 305px;
+            background-size: 940px;
+        }
     </style>
 </head>
 <body>
     
     <div class="container">
-        <section id="site-short-info">
+        <section id="site-short-info" class="pt60">
             <div class="page-header">
                 <h1>Uğur &ldquo;vigo&rdquo; Özyılmazel <small>Developer</small><span class="pull-right"><a class="twitter-name" href="http://twitter.com/vigobronx" title="Follow me!">@vigobronx</a></span></h1>
             </div>
+        </section>
+        
+        <section id="site-random-photos">
+            <div class="row">
+                <div class="span16">
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="site-links">
             <div class="row">
                 <div class="span-one-third">
                     <h4>Developer Profile <small>Social</small></h4>
@@ -73,7 +121,6 @@
                     <ul class="unstyled external-open">
                         <li><a href="http://vigodome.com" title="Development Blog">http://vigodome.com</a></li>
                     </ul>
-
                 </div>
                 <div class="span-one-third">
                     <h4>Fun</h4>
@@ -88,16 +135,15 @@
                         <li><a href="http://500px.com/vigo">http://500px.com/vigo</a></li>
                         <li><a href="http://vigo-instagram.posterous.com/">http://vigo-instagram.posterous.com/</a></li>
                     </ul>
-
                 </div>
             </div>
         </section>
         
     </div>
-    <!-- <footer class="footer">
+    <footer>
         <div class="container">
             <p>Css framework by <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></p>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
