@@ -10,8 +10,18 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- Le styles -->
-    <link href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css?v1.4.0"> -->
+    <!-- <link href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.css" rel="stylesheet"> -->
+    
+    
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css?v1.4.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".external-open a").attr('target', "_blank");
+        });
+        
+    </script>
     <style type="text/css" media="screen">
         section {
             padding-top: 60px;
@@ -25,6 +35,10 @@
         .debug-a {
             background: #eee;
         }
+        
+        .twitter-name {
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -32,9 +46,51 @@
     <div class="container">
         <section id="site-short-info">
             <div class="page-header">
-                <h1>Uğur &ldquo;vigo&rdquo; Özyılmazel <small>Developer</small></h1>
+                <h1>Uğur &ldquo;vigo&rdquo; Özyılmazel <small>Developer</small><span class="pull-right"><a class="twitter-name" href="http://twitter.com/vigobronx" title="Follow me!">@vigobronx</a></span></h1>
             </div>
-            <p>Follow me <a href="http://twitter.com/vigobronx">@vigobronx</a></p>
+            <div class="row">
+                <div class="span-one-third">
+                    <h4>Developer Profile <small>Social</small></h4>
+                    <ul class="unstyled">
+                        <li><a href="http://careers.stackoverflow.com/vigo">http://careers.stackoverflow.com/vigo</a></li>
+                        <li><a href="https://github.com/vigo">https://github.com/vigo</a></li>
+                        <li><a href="http://djangopeople.me/p/vigobronx/">http://djangopeople.me/p/vigobronx/</a></li>
+                        <li><a href="http://hackerbuddy.com/users/2600">http://hackerbuddy.com/users/2600</a></li>
+                        <li><a href="http://www.quora.com/Uğur-Özyılmazel">http://www.quora.com/Uğur-Özyılmazel</a></li>
+                        <li><a href="https://convore.com/users/vigo/">https://convore.com/users/vigo/</a></li>
+                        <li><a href="http://www.screenr.com/user/vigobronx">http://www.screenr.com/user/vigobronx</a></li>
+                    </ul>
+                </div>
+                <div class="span-one-third">
+                    <h4>Development Blog <small>Turkish</small></h4>
+                    <ul class="unstyled external-open">
+                        <li><a href="http://ugur.ozyilmazel.com/" title="Blog">http://ugur.ozyilmazel.com</a></li>
+                        <li><a href="http://vigoyla.blogspot.com/" title="Blog">http://vigoyla.blogspot.com</a></li>
+                        <li><a href="http://macosxtips.tumblr.com/" title="Mac OS X Tips">http://macosxtips.tumblr.com/</a></li>
+                    </ul>
+                    
+                    <h4>Development Blog <small>English</small></h4>
+                    <ul class="unstyled external-open">
+                        <li><a href="http://vigodome.com" title="Development Blog">http://vigodome.com</a></li>
+                    </ul>
+
+                </div>
+                <div class="span-one-third">
+                    <h4>Fun</h4>
+                    <ul class="unstyled external-open">
+                        <li><a href="http://vigo.posterous.com/" title="Photo blog">http://vigo.posterous.com/</a></li>
+                        <li><a href="http://vigo.tumblr.com/" title="Misc blog">http://vigo.tumblr.com/</a></li>
+                    </ul>
+                    
+                    <h4>Photography</h4>
+                    <ul class="unstyled external-open">
+                        <li><a href="http://www.flickr.com/photos/vigobronx/">http://www.flickr.com/photos/vigobronx/</a></li>
+                        <li><a href="http://500px.com/vigo">http://500px.com/vigo</a></li>
+                        <li><a href="http://vigo-instagram.posterous.com/">http://vigo-instagram.posterous.com/</a></li>
+                    </ul>
+
+                </div>
+            </div>
         </section>
         
     </div>
