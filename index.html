@@ -26,20 +26,27 @@
                 'amiga-roms.jpg',
                 'amiga-wb.jpg',
                 'bidik.jpg'
-            ], irq;
+            ], irq,
+            images = [];
+            
+            $.each(pics, function(i, a){
+                images[i] = new Image();
+                images[i].src = "images/splash/" + a;
+            });
             
             function irq_loader(){
                 var r = Math.ceil(Math.random()*pics.length-1),
-                    f = "images/splash/" + pics[r];
+                    f = images[r].src;
                 
                 $("#site-random-photos p").animate({
                     opacity: 0
-                }, 1000, function(){
+                }, "slow", function(){
                     $(this).css({
-                        "background": "url(" + f + ")"
+                        "background": "url(" + f + ")",
+                        "background-size": "100%",
                     }).animate({
-                        opacity: 1
-                    }, 1000);
+                        opacity: 1,
+                    }, "slow");
                 })
                 irq = window.setTimeout(irq_loader, 10*1000);
             }
