@@ -19,13 +19,39 @@
     <script>
         $(document).ready(function() {
             $(".external-open a").attr('target', "_blank");
-            
             var pics = [
-                'amiga-bulk.jpg',
-                'amiga-kick13.jpg',
-                'amiga-roms.jpg',
-                'amiga-wb.jpg',
-                'bidik.jpg'
+                "amiga-bulk.jpg",
+                "amiga-kick13.jpg",
+                "amiga-roms.jpg",
+                "amiga-wb.jpg",
+                "bidik.jpg",
+                "breakpoint2005-03.jpg",
+                "breakpoint2006-03.jpg",
+                "breakpoint2006-04.jpg",
+                "breakpoint2006-07.jpg",
+                "breakpoint2006-09.jpg",
+                "c128d-2.jpg",
+                "c128d.jpg",
+                "c16.jpg",
+                "c64.gif",
+                "grft-rez.jpg",
+                "grft-s2k.jpg",
+                "myroom-2.jpg",
+                "myroom.jpg",
+                "nightshift2006-04.jpg",
+                "ns07-12.jpg",
+                "ns07-16.jpg",
+                "ns07-20.jpg",
+                "ns07-22.jpg",
+                "ns07-23.jpg",
+                "ns07-24.jpg",
+                "ns07-25.jpg",
+                "omerim.jpg",
+                "oyuncak-muzesi-04.jpg",
+                "retro-replay.gif",
+                "thb.jpg",
+                "turbo-graf-1.jpg",
+                "turbo-vigo.jpg"
             ], irq,
             images = [];
             
@@ -38,7 +64,7 @@
                 var r = Math.ceil(Math.random()*pics.length-1),
                     f = images[r].src;
                 
-                $("#site-random-photos p").animate({
+                $("#pics").animate({
                     opacity: 0
                 }, "slow", function(){
                     $(this).css({
@@ -77,10 +103,16 @@
             font-size: 20px;
         }
         
-        #site-random-photos p {
+        #pics {
             width: 940px;
             height: 305px;
             background-size: 940px;
+        }
+        
+        #pics h1 {
+            background-color: #000;
+            color: #fff;
+            padding: 0 0 0 20px;
         }
     </style>
 </head>
@@ -95,8 +127,7 @@
         
         <section id="site-random-photos">
             <div class="row">
-                <div class="span16">
-                    <p></p>
+                <div class="span16" id="pics">
                 </div>
             </div>
         </section>
