@@ -1,0 +1,33 @@
+section {
+    padding-top: 20px;
+}
+.pt60 {
+    padding-top: 60px;
+}
+.footer {
+    background: #eee;
+}
+.debug-a {
+    background: #eee;
+}
+
+.twitter-name {
+    font-size: 20px;
+}
+
+#pics {
+    width: 940px;
+    height: 305px;
+    background-size: 940px;
+}
+
+#pics h1 {
+    background-color: #000;
+    color: #fff;
+    padding: 0 0 0 20px;
+}
+
+.special em {
+    font-style: normal;
+    color: #aaa;
+}

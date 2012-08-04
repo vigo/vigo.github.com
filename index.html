@@ -10,116 +10,8 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- Le styles -->
-    <!-- <link href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.css" rel="stylesheet"> -->
-    
-    
-    
-    <link rel="stylesheet" href="css/bootstrap.min.css?v1.4.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".external-open a").attr('target', "_blank");
-            var pics = [
-                "amiga-bulk.jpg",
-                "amiga-kick13.jpg",
-                "amiga-roms.jpg",
-                "amiga-wb.jpg",
-                "bidik.jpg",
-                "breakpoint2005-03.jpg",
-                "breakpoint2006-03.jpg",
-                "breakpoint2006-04.jpg",
-                "breakpoint2006-07.jpg",
-                "breakpoint2006-09.jpg",
-                "c128d-2.jpg",
-                "c128d.jpg",
-                "c16.jpg",
-                "c64.gif",
-                "grft-rez.jpg",
-                "grft-s2k.jpg",
-                "myroom-2.jpg",
-                "myroom.jpg",
-                "nightshift2006-04.jpg",
-                "ns07-12.jpg",
-                "ns07-16.jpg",
-                "ns07-20.jpg",
-                "ns07-22.jpg",
-                "ns07-23.jpg",
-                "ns07-24.jpg",
-                "ns07-25.jpg",
-                "omerim.jpg",
-                "oyuncak-muzesi-04.jpg",
-                "retro-replay.gif",
-                "thb.jpg",
-                "turbo-graf-1.jpg",
-                "turbo-vigo.jpg"
-            ], irq,
-            images = [];
-            
-            $.each(pics, function(i, a){
-                images[i] = new Image();
-                images[i].src = "images/splash/" + a;
-            });
-            
-            function irq_loader(){
-                var r = Math.ceil(Math.random()*pics.length-1),
-                    f = images[r].src;
-                
-                $("#pics").animate({
-                    opacity: 0
-                }, "slow", function(){
-                    $(this).css({
-                        "background": "url(" + f + ")",
-                        "background-size": "100%",
-                    }).animate({
-                        opacity: 1,
-                    }, "slow");
-                })
-                irq = window.setTimeout(irq_loader, 10*1000);
-            }
-            
-            irq_loader();
-            
-        });
-        
-    </script>
-    <style type="text/css" media="screen">
-        section {
-            padding-top: 20px;
-        }
-        .pt60 {
-            padding-top: 60px;
-        }
-        .footer {
-            background: #eee;
-/*            padding: 30px 0;*/
-/*            border: none;*/
-/*            text-align: center;*/
-        }
-        .debug-a {
-            background: #eee;
-        }
-        
-        .twitter-name {
-            font-size: 20px;
-        }
-        
-        #pics {
-            width: 940px;
-            height: 305px;
-            background-size: 940px;
-        }
-        
-        #pics h1 {
-            background-color: #000;
-            color: #fff;
-            padding: 0 0 0 20px;
-        }
-        
-        .special em {
-            font-style: normal;
-            color: #aaa;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css?v1.4.0" />
+    <link rel="stylesheet" href="css/custom.css" />
 </head>
 <body>
     
@@ -215,5 +107,9 @@
             <p>Css framework by <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></p>
         </div>
     </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    
 </body>
 </html>
