@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $(".external-open a").attr('target', "_blank");
     var pics = [
+        "ezos-ruby.jpg",
+        "ezos-bayrak.jpg",
         "amiga-bulk.jpg",
         "amiga-kick13.jpg",
         "amiga-roms.jpg",
@@ -45,7 +47,6 @@ $(document).ready(function() {
     function irq_loader(){
         var r = Math.ceil(Math.random()*pics.length-1),
             f = images[r].src;
-        
         $("#pics").animate({
             opacity: 0
         }, "slow", function(){
