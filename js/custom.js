@@ -3,6 +3,8 @@ $(document).ready(function() {
     var pics = [
         "ezos-ruby.jpg",
         "ezos-bayrak.jpg",
+        "ezel-github.jpg",
+        "ezel-rain-forest.jpg",
         "amiga-bulk.jpg",
         "amiga-kick13.jpg",
         "amiga-roms.jpg",
