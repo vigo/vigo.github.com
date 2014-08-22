@@ -1,3 +1,7 @@
 # Personal Page
 
-Some personal stuff (8
+Very simple and basic home page of me!
+
+# Contact
+
+[@vigorbronx](http://twitter.com/vigobronx)
